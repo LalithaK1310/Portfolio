@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lalitha K- Portfolio</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="/Lalitha.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Lalitha K</h1>
+            <p>Computer Science Student</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">My Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about">
+        <div class="section-content">
+            <h2><u>About Me</u></h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi! I’m Lalitha K, a computer science student. I’m a hard-working, passionate person
+                who believes in the importance of education and accessibility to technological advancements.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My computer experience started early and I am in keen interest 
+                    to know how computer works and I am too passionate about it.
+                </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><u>Education</u></h2>
+            <h3>B.Sc </h3>
+            <p>Dr.Umayal Ramanathan College for Women, Karaikudi</p>
+            <h3>Higher Education </h3>
+            <p>The Leaders Academy, Karaikudi</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2><u>Skills</u></h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Python</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="section-content">
+            <h2><u>My Work</u></h2>
+            <ul>
+                <li><a href="http://www.futurikproducts.com/lalitha/home.aspx">Project</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2><u>Resume</u></h2>
+            <a href="/Lalitha K Resume.pdf" class="download-button">Download Resume</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lalitha K</p>
+    </footer>
+    <script>
+        // Smooth scrolling to section when clicking on navigation links 
+document.querySelectorAll('a[href="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) { 
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1); 
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+});
+});
+    </script>
+
+</body>
+
+</html>
